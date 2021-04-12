@@ -1,0 +1,80 @@
+$color-accent: #fdf4c9;
+
+.container {
+    height: 10vh;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 10vh;
+    align-items: center;
+}
+
+.separator {
+    border-bottom: 1px solid $color-accent;
+}
+
+.subLeft {
+    display: flex;
+    align-items: center;
+    justify-self: start;
+    grid-column: span 5;
+}
+.logo {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.subRight {
+    grid-column-end: span 7;
+    justify-self: end;
+    margin-right: 10px;
+}
+
+.label {
+    font-size: 18px;
+    color: $color-accent;
+    font-weight: bold;
+}
+.subLabel {
+    line-height: 0.5;
+    font-size: 12px;
+    color: $color-accent;
+}
+.subLabelRight {
+    line-height: 0.5;
+    color: $color-accent;
+    font-size: 12px;
+}
+
+@media (max-width: 767px) {
+    .container {
+        height: 140px;
+    }
+    .header {
+        margin-top: 30px;
+        grid-template-columns: repeat(1, minmax(200px, 1fr));
+        gap: 20px 0px;
+    }
+    .subLeft {
+        display: flex;
+        justify-self: center;
+    }
+    .subRight {
+        display: flex;
+        justify-self: center;
+    }
+    .subLabelRight {
+        line-height: 0.5;
+        font-size: 20px;
+        color: $color-accent;
+    }
+    .label {
+        font-size: 35px;
+    }
+    .subLabel {
+        line-height: 0.5;
+        font-size: 15px;
+    }
+}

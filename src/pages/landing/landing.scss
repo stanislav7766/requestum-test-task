@@ -1,0 +1,8 @@
+$color-accent: #fdf4c9;
+$color-bg: #3a4047;
+
+.landing {
+    height: 90vh;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}

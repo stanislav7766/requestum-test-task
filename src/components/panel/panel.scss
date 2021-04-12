@@ -1,0 +1,24 @@
+$color-bg: #3a4047;
+
+.panel {
+    grid-column: span 3;
+    width: 100%;
+}
+
+.container {
+    margin-top: 30px;
+}
+
+.inputMove {
+    margin-right: 20px;
+}
+
+@media (max-width: 767px) {
+    .panel {
+        grid-column: span 12;
+        width: 100%;
+    }
+    .inputMove {
+        margin-right: 0px;
+    }
+}
